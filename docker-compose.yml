@@ -1,12 +1,12 @@
-version: '3'
+version: "3.9"
 
 services:
-  sleek-airflow:
-    image: sleek-airflow:latest
-    
+  airflowtutorial:
+    build: .
+    image: airflowtutorial:2.7.1
+    restart: unless-stopped
     volumes:
       - ./airflow:/opt/airflow
-
     ports:
       - "8080:8080"
     command: airflow standalone
