@@ -10,3 +10,7 @@ USER airflow
 
 # Set working directory
 WORKDIR /opt/airflow
+
+# Install provider packages from requirements.txt
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
