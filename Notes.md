@@ -21,3 +21,16 @@ Operator Categories:
 
 Only some operators are installed with Airflow by default, while others may require additional installation steps.
 Do it via Docker file or requirements.txt
+
+Variables:
+- Key-Value Pairs
+- Types: Regular , JSON
+- Airflow UI -> Admin -> Variables
+- Can be used for multiple DAGs
+- var.value.get function to get variable values
+- Can be encrypted if required
+
+Connections:
+- Username, Password, Host, Port, Connection Type, Connection ID (Unique)
+- Airflow UI -> Admin -> Connections
+- If connection not found, install using package provider
