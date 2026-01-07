@@ -34,3 +34,20 @@ Connections:
 - Username, Password, Host, Port, Connection Type, Connection ID (Unique)
 - Airflow UI -> Admin -> Connections
 - If connection not found, install using package provider
+
+Sensors:
+- Special type of operator that waits for a certain condition to be met at regular intervals
+- Ex: S3KeySensor, Datetime, HTTP, ExternalTaskSensor, Bigquery
+- Parameters:
+ 1. Poke Interval - Time to wait between each try
+ 2. Mode - Poke or Reschedule
+ 3. Timeout - Maximum time to wait for the condition to be met by Airflow
+ 4. softfail - If True, the task will not fail if the condition is not met
+
+Deferrable Operators:
+- Allow tasks to be paused and resumed later
+- Efficient resource usage
+- Triggerer: A separate process that wakes up and checks if the task can be run
+- Cluster activity - Check Trigger running or not
+- Can make sensor tasks as deferable with parameters
+- Check for Deferrable / Async/ Trigger keyword in operators
