@@ -51,3 +51,15 @@ Deferrable Operators:
 - Cluster activity - Check Trigger running or not
 - Can make sensor tasks as deferable with parameters
 - Check for Deferrable / Async/ Trigger keyword in operators
+
+Xcom:
+- To exchange data as airflow tasks are isolated
+- Xcom push and pull
+- Xcoms are stored in the metadata database
+- Smaller data only, for larger use customer database
+- UI: Admin -> Xcoms
+
+Hooks:
+- Prebuild Python class
+- Low Level Code -> Hooks -> Operators
+- Use operators first, If not available, use Hooks, If not hooks, write custom code
