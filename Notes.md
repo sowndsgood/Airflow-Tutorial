@@ -63,3 +63,12 @@ Hooks:
 - Prebuild Python class
 - Low Level Code -> Hooks -> Operators
 - Use operators first, If not available, use Hooks, If not hooks, write custom code
+
+Datasets:
+- Data-aware Scheduling - Schedule tasks based on the availability of data
+- Use dataset class
+- Dataset: A logical representation of a collection of data
+- Can be used to define dependencies between tasks
+- UI: Admin -> Datasets
+- Outlets parameter means the dataset that a task produces
+- Inlets parameter means the dataset that a task requires
